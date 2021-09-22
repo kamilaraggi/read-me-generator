@@ -37,7 +37,7 @@ var questions = [
       type: 'checkbox',
       name: 'linceses',
       message: 'What languages do you used?',
-      choices: ['ISC', 'MIT', 'IBM', 'Apache', 'None']
+      choices: ['ISC', 'MIT', 'PDDL', 'Zlib', 'None']
     },
     {
       type: 'input',
@@ -55,7 +55,7 @@ var questions = [
       message: 'List your collaborators, with links to their GitHub profiles.',
     },
   ]
-    function writeToFile(fileName, data){
+    function writeToFile(filename ,data){
     fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) => {
 
       if (err) {
@@ -63,7 +63,7 @@ var questions = [
       }
 
       console.log("Success! You have just created a high quality README for your project.");
-
+    
   });
 };
 
