@@ -37,11 +37,11 @@ var questions = [
       type: 'checkbox',
       name: 'linceses',
       message: 'What languages do you used?',
-      choices: ['ISC', 'MIT', 'Academic', 'Apache', 'None']
+      choices: ['ISC', 'MIT', 'IBM', 'Apache', 'None']
     },
     {
       type: 'input',
-      name: 'contributing',
+      name: 'contribution',
       message: 'How to contribuite to the project.',
     },
     {
@@ -56,13 +56,22 @@ var questions = [
     },
   ]
     function writeToFile(fileName, data){
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
+    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) => {
 
       if (err) {
         return console.log(err);
       }
 
-      console.log("Success! You have just created a higth quality README for your project.");
+      console.log("Success! You have just created a high quality README for your project.");
 
   });
 };
+
+function init(){
+  inquirer.prompt(questions)
+  .then(function (userInput){
+   writeToFile("README.md", readmeFunc(userInput));
+  });
+};
+
+init();
