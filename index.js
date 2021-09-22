@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
-const readmeFunc = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
 var questions = [
@@ -70,7 +70,7 @@ var questions = [
 function init(){
   inquirer.prompt(questions)
   .then(function (userInput){
-   writeToFile("README.md", readmeFunc(userInput));
+   writeToFile("README.md", generateMarkdown(userInput));
   });
 };
 
