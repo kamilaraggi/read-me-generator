@@ -1,55 +1,68 @@
-// TODO: Include packages needed for this application
-const fs = require('fs')
-const inquirer = require('inquirer')
-// TODO: Create an array of questions for user input
-inquirer.prompt([
+//Kamila Raggi homework 09-challenge
+
+const fs = require('fs');
+const inquirer = require('inquirer');
+const readmeFunc = require('./utils/generateMarkdown.js');
+
+
+var questions = [
     {
-        type: 'input',
-        name:'title',
-        message:'What is your Project Title?'
+      type: 'input',
+      name: 'title',
+      message: 'What is your project title?'
     },
     {
-        type:'input',
-        name:'description',
-        message:'Describe your project.'
+      type: 'input',
+      name: 'descripition',
+      message: 'Describe you project:',
+      
     },
     {
-       type:'confirm',
-       message:'Add Table Of Contents?',
-       name:'contents',
+      type: 'checkbox',
+      name: 'languages',
+      message: 'What languages do you used?',
+      choices: ['HTML', 'CSS', 'Javascript', 'Nodejs', 'Bootstrap', 'Others']
     },
     {
-        type:'input',
-        name:'installation',
-        message:'Provide a step-by-step description of how to get the development environment running.'
+      type: 'input',
+      name: 'installation',
+      message: 'What are the steps required to install your project?',
     },
     {
-        type: 'input',
-        name:'usage',
-        message:'Provide instructions and examples for use. Include screenshots as needed.'
+      type: 'input',
+      name: 'usage',
+      message: 'Provide instructions and examples for use.',
     },
     {
-        type:'input',
-        name:'credits',
-        message:'List your collaborators.'
+      type: 'checkbox',
+      name: 'linceses',
+      message: 'What languages do you used?',
+      choices: ['ISC', 'MIT', 'Academic', 'Apache', 'None']
     },
     {
-        type:'input',
-        name:'license',
-        message:'Choose a license, for help use https://choosealicense.com/'
+      type: 'input',
+      name: 'contributing',
+      message: 'How to contribuite to the project.',
     },
- ])
-// TODO: Create a function to write README file
-.then(function(data) {
-    const readme = data.name.toLowerCase().split(' ').join('') + '.json'
-    fs.writeFile('readme.md', JSON.stringify('README', data, null, '\t'), function(err) {
+    {
+      type: 'input',
+      name: 'test',
+      message: 'How to test the project.',
+    },
+    {
+      type: 'input',
+      name: 'credits',
+      message: 'List your collaborators, with links to their GitHub profiles.',
+    },
+  ]
+    function writeToFile(fileName, data){
+    fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
+
       if (err) {
         return console.log(err);
       }
-      console.log("Success!");
+
+      console.log("Success! You have just created a higth quality README for your project.");
+
   });
-});
-// TODO: Create a function to initialize app
-//function init() {}
-// Function call to initialize app
-//init();
+};
