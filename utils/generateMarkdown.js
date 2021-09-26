@@ -22,13 +22,13 @@ function generateMarkdown(data) {
 
    ## Languages
 
-   <code>${data.languages}</code>
+    > ${data.languages}
 
    ___________________________________________
 
    ## Installation
    
-   > ${data.installation}
+   <code>${data.installation}</code>
 
    ____________________________________________
    
