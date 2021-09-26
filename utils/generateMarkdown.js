@@ -1,35 +1,64 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 function generateMarkdown(data) {
-  return `
-  # ${data.title}
-  ##Table Of Contents
-   *[Description](#description)
-   *[Languages](#languages)
-   *[Installation](#installation)
-   *[Usage](#usage)
-   *[License](#license)
-   *[Contribution](#contribution)
-   *[Test](#test)
-   *[Credits](#credits)
+  return`# ${data.title}
+
+   ## Table Of Contents
+
+   1. [Description](#description)
+   2. [Languages](#languages)
+   3. [Installation](#installation)
+   4. [Usage](#usage)
+   5. [License](#license)
+   6. [Contribution](#contribution)
+   7. [Test](#test)
+   8. [Credits](#credits)
    
 
-   ##Description:
+   ## Description 
+
    ${data.description}
-   ##Languages
-   ${data.languages}
-   ##Installation
-   ${data.installation}
-   ##Usage
+
+   ___________________________________________
+
+   ## Languages
+
+   <code>${data.languages}</code>
+
+   ___________________________________________
+
+   ## Installation
+   
+   > ${data.installation}
+
+   ____________________________________________
+   
+   ## Usage
+  
    ${data.usage}
-   ##License
-   ${data.license}
-   [![License](https://img.shields.io/badge/License-${data.license}-blue.svg)](https://opensource.org/licenses/${data.license})]
-   ##Contribution
+
+   ____________________________________________
+
+   ## License
+
+   [![License](https://img.shields.io/badge/license-${data.licenses}-${data.color}.svg)](https://www.boost.org/LICENSE_1_0.txt)
+
+   ___________________________________________
+   
+   ## Contribution
+
    ${data.contribution}
-   ##Test
+   
+   ____________________________________________
+
+   ## Test
+    
    ${data.test}
-   ##Credits
-   (https://github.com/${data.credits}) `;
+
+   ____________________________________________
+   
+   ## Credits
+
+   (https://github.com/${data.credits})`
 }
 
 
