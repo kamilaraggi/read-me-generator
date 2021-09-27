@@ -1,4 +1,4 @@
-# readme
+# Readme Generator
 
    ## Table Of Contents
 
@@ -20,40 +20,40 @@
 
    ## Languages
 
-   <code>Javascript,Nodejs</code>
+    > Javascript,Nodejs
 
    ___________________________________________
 
    ## Installation
    
-   > sdfgsfgdfg
+   <code> npm install</code>
 
    ____________________________________________
    
    ## Usage
   
-   dfgfgfdg
+   answer the questions to preview to file.
 
    ____________________________________________
 
    ## License
 
-   [![License](https://img.shields.io/badge/license-Zlib-.svg)](https://www.boost.org/LICENSE_1_0.txt)
+   [![License](https://img.shields.io/badge/license-MIT-.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
    ___________________________________________
    
    ## Contribution
 
-   ergdfg
+    email me 
    
    ____________________________________________
 
    ## Test
     
-   seggegt
+    type node index on terminal
 
    ____________________________________________
    
    ## Credits
 
-   (https://github.com/tgdgs)
+   (https://github.com/kamilaraggi)
