@@ -21,7 +21,7 @@ var questions = [
     },
     {
       type: 'input',
-      name: 'descripition',
+      name: 'description',
       message: 'Describe you project:',
       validate: descInput => {
         if (descInput) {

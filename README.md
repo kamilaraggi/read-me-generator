@@ -1,4 +1,4 @@
-# Readme Generator
+# README Generator
 
    ## Table Of Contents
 
@@ -14,46 +14,46 @@
 
    ## Description 
 
-   undefined
+   This command line app allows the user to describe his project information creating a professinal high quality md file.
 
    ___________________________________________
 
    ## Languages
 
-    > Javascript,Nodejs
+  >   Javascript, Nodejs
 
    ___________________________________________
 
    ## Installation
    
-   <code> npm install</code>
+   <code>npm install</code>
 
    ____________________________________________
    
    ## Usage
   
-   answer the questions to preview to file.
+   answer the questions to preview the readme.
 
    ____________________________________________
 
    ## License
 
-   [![License](https://img.shields.io/badge/license-MIT-.svg)](https://www.boost.org/LICENSE_1_0.txt)
+   [![License](https://img.shields.io/badge/license-ISC-yellow.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
    ___________________________________________
    
    ## Contribution
 
-    email me 
+   E-mail me kamilaraggi@hotmail.com
    
    ____________________________________________
 
    ## Test
     
-    type node index on terminal
+   Type node index on terminal.
 
    ____________________________________________
    
    ## Credits
 
-   (https://github.com/kamilaraggi)
+   (https://github.com/kamilaraggi )
